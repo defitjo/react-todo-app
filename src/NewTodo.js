@@ -13,7 +13,7 @@ class NewTodo extends React.Component {
   render() {
     return (
       <form className="new-todo" onSubmit={this.handleSubmit}>
-        <input type="text" ref={(input) => this.input = input} />
+        <input type="text" placeholder="New Todo..." ref={(input) => this.input = input} required />
         <input type="submit" value="Add Todo" />
       </form>
     );

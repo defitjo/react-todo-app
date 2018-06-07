@@ -4,7 +4,6 @@ import './App.css';
 class RemoveTodo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
     this.handleDelete = this.handleDelete.bind(this);
   }
   handleDelete() {
@@ -15,7 +14,7 @@ class RemoveTodo extends React.Component {
       <li>
         <div className="todo-list">
           <p className="todo-name">{ this.props.todo }</p>
-          <span className="delete" onClick={this.handleDelete}> Remove </span>
+          <span className="delete" onClick={this.handleDelete}>Delete</span>
         </div>
       </li>
     );

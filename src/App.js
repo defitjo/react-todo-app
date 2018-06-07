@@ -41,7 +41,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">React Todo App</h1>
         </header>
-        <section className="Todo-App">
+        <section className="todo-app">
+          <h1>My Todos</h1>
           <NewTodo onAdd={this.onAdd} />
           <ul>{ todoList }</ul>
         </section>
